@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Instrument_Sans, Inter } from "next/font/google";
+import { SiteAnalytics } from "@/components/analytics/SiteAnalytics";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import "./globals.css";
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         {children}
         <Footer />
+        <SiteAnalytics />
         <noscript>
           <style>
             {`[data-reveal]{opacity:1!important;transform:none!important;clip-path:none!important}[data-reveal] img{scale:1!important}`}
