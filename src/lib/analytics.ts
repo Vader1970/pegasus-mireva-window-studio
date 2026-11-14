@@ -1,11 +1,10 @@
 /**
- * GA4 configuration for the Mireva showcase (Pegasus Digital — Showcase Concepts).
+ * GA4 for the Pegasus Digital – Showcase Concepts property.
+ * Measurement ID is supplied via NEXT_PUBLIC_GA_MEASUREMENT_ID only.
  *
- * Page views, scrolls, and outbound clicks are collected by GA4 Enhanced Measurement
- * through the official `@next/third-parties/google` GoogleAnalytics tag. Do not send
- * manual `page_view`, `scroll`, or outbound `click` events — that duplicates data.
- *
- * Never pass demonstration form values or personal information into analytics events.
+ * Page views, scrolls, and outbound clicks come from GA4 Enhanced Measurement
+ * via `@next/third-parties/google`. Do not send manual page_view / scroll /
+ * outbound click events (duplicates). Never send demo form field values.
  */
 
 const MEASUREMENT_ID_PATTERN = /^G-[A-Z0-9]+$/i;

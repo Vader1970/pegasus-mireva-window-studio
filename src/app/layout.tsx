@@ -72,13 +72,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         {children}
         <Footer />
-        <SiteAnalytics />
         <noscript>
           <style>
             {`[data-reveal]{opacity:1!important;transform:none!important;clip-path:none!important}[data-reveal] img{scale:1!important}`}
           </style>
         </noscript>
       </body>
+      <SiteAnalytics />
     </html>
   );
 }
